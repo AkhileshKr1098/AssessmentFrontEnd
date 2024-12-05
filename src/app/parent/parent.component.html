@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Parent Component</h2>
+    <p><strong>Primitive Data:</strong> {{ primitiveData }}</p>
+    <p><strong>Non-Primitive Data:</strong> {{ nonPrimitiveData.value }}</p>
+  
+    <button (click)="updatePrimitiveData()">Update Primitive Data</button>
+    <button (click)="updateNonPrimitiveData()">Update Non-Primitive Data</button>
+  
+    <hr />
+  
+    <app-child [childData]="nonPrimitiveData"></app-child>
+  </div>
+  

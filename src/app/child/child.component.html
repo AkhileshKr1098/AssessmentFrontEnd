@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>Child Component</h3>
+    <p><strong>Data from Parent:</strong> {{ childData.value }}</p>
+    <p><strong>Child's Own Data:</strong> {{ childOwnData }}</p>
+  
+    <button (click)="updateChildData()">Update Child's Own Data</button>
+  
+    <p><strong>Service Data:</strong> {{ sharedService.getMessage() }}</p>
+  </div>
+  
